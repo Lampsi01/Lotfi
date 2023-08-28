@@ -1,0 +1,348 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Black+Ops+One&family=Cairo&family=Kanit:wght@700&family=Merriweather:ital,wght@0,700;1,400&family=Playfair+Display:ital@1&family=Roboto:wght@700&family=Sacramento&family=Ubuntu&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Black+Ops+One&family=Cairo&family=Kanit:wght@700&family=Merriweather:ital,wght@0,700;1,400&family=Playfair+Display:ital@1&family=Roboto:wght@700&family=Sacramento&family=Ubuntu&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:   sans-serif ;
+    scroll-behavior: smooth;  
+
+}  
+html {
+    overflow-x: hidden;
+}
+
+ body {
+    overflow-x: hidden;
+    /* height: 300vh;  */
+ }
+
+ /* the nav section . */
+ 
+ header {
+   
+    /* padding: 20px; */
+    position: fixed;
+    width: 100%;
+    min-height: 10vh;
+    background-color: #322653;
+    box-shadow: 0px 10px 20px #8062D6;
+    z-index: 98;
+    color: white;
+     
+     
+ }
+ nav {
+     
+    
+     
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 0 ;
+     
+    width: 100%;
+    
+ }
+ .logo  {
+    font-size: 35px;
+    font-family: "Black Ops One";
+
+ }
+ .links {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+   
+ }
+ .links li , .Droplinks li {
+  list-style-type: none;
+  padding: 40px 20px;
+   
+ }
+ .links li a , .Droplinks li a {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 19px;
+    font-family: "Black Ops One";
+
+   }
+
+   .links li a:hover , .Droplinks li a:hover  {
+    opacity: 60%;
+   }
+  .icon { 
+    display:none; 
+    font-size: 34px;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+  }
+  .Droplinks {
+    display: none;
+    position: absolute;
+  } 
+  
+  
+@media (max-width : 880px) {
+    .nav {
+        display: flex;
+        justify-content: space-between;
+    
+     }
+    .icon 
+     {
+        display: block;
+        
+         
+        /* margin: 0px 0px 0px 60px ; */
+     }
+     .links{ 
+        display: none;
+     }
+     .Droplinks {
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top:5rem;  
+        left: 900px;
+        z-index: 99;
+        background-color: #322653;
+        /* box-shadow: 20px 6px 10px   lightgrey; */
+        transition: 0.3s ease-in-out;
+        width:100%; 
+        
+      } 
+      .apear {
+        position: absolute;
+        left:0%; 
+      }
+}
+
+
+
+/* ################################  */
+
+
+
+
+
+
+
+
+
+
+
+
+ .swiper {
+  max-width: 100rem;
+  height: 900px;
+  /* margin: 70% auto; */
+  padding: 30% 0 ;
+  cursor: pointer;
+}
+.swiper-slide {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 50px;
+}
+.card {
+    width: 25rem;
+    height:35rem; 
+      
+   
+}
+.card img {
+    height:20rem; 
+}
+
+.swiper-button-prev ,.swiper-button-next    {
+    color:black; 
+    font-weight: bold;
+    
+}
+.swiper-pagination {
+    color:black
+}
+
+/* ###########################   */
+
+#home{
+     
+    margin: 270px 0 20% 0;
+    padding: 0 0 10% 0  ;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.item2 svg {
+    width: 60rem;
+    min-width:200px ;
+     
+    /* height:900px;  */
+}
+ 
+.con {
+    
+    max-width: auto;
+    /* margin: 0 auto; */
+    /* padding: 20px;  */
+  }
+
+  .item1 {
+    /* flex: 0 0 calc(50% - 20px); */
+    margin: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    /* background-color: #f2f2f2;
+    border: 1px solid #ddd; */
+    /* text-align: center; */
+   
+  }
+  .item1 h2 {
+    font-size: 35px;
+    font-family: Roboto;
+  }
+  .item1 p {
+    font-size: 40px;
+    font-family: "Black Ops One";
+  }
+ 
+  @media (max-width:822px)
+ {
+    .item2 svg {
+        width:40rem; 
+    }
+ }
+ @media (max-width:550px)
+ {
+    .item2 svg {
+        width:30rem; 
+    }
+ }
+ @media (max-width:350px)
+ {
+    .item2 svg {
+        width:20rem; 
+    }
+ }
+
+
+
+
+
+/* Webkit-based (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #322653;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #8062D6;
+  }
+  
+/* contact me section  */ 
+
+#contact {
+    padding: 20% 0 ;
+}
+.con2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* align-items: center; */
+    max-width: 2900px;
+    margin: 0 auto;
+    padding: 40px 0 ;
+  }
+
+  .item {
+    /* flex: 0 0 calc(50% - 20px); */
+    margin: 10px;
+    padding: 0px 0 ;
+    box-sizing: border-box;
+    /* background-color: #f2f2f2;
+    border: 1px solid #ddd; */
+  }
+
+  .social-links{
+    margin: 0; 
+    padding: 0px 0px  ;
+  }
+  .linksS{
+    list-style: none;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 30px;
+    padding: 10px 0;
+  }
+  .linksS a{
+    padding: 0 16px;
+  }
+  .item svg {
+    width: 40rem;
+    min-width:200px ;
+  }
+
+  @media (max-width:822px)
+  {
+     .item svg {
+         width:40rem; 
+     }
+      
+  }
+  @media (max-width:550px)
+  {
+     .item svg {
+         width:24rem; 
+     }
+     .linksS{
+       
+        font-size: 20px;
+      
+      }
+  }
+  @media (max-width:350px)
+  {
+     .item svg {
+         width:20rem; 
+     }
+     .linksS{
+       
+        font-size: 17px;
+      
+      }
+  }
+ 
+
+  footer {
+    background-color: #322653;
+    height: 11vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .textFooter {
+    font-family: Roboto; 
+    font-size: 20px;
+  }
+  
+  @media (max-width:350px)
+  {
+    .textFooter {
+      
+        font-size: 15px;
+      }
+  }
